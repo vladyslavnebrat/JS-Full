@@ -5,7 +5,12 @@ const numberOfElements = numbers.length;
 console.log(numberOfElements);
 
 function getArrayBounds(arr) {
+  if (!Array.isArray(arr)) {
+    return null;
+  }
+
   return [arr.length, arr[0], arr[arr.length - 1]];
 }
+
 const arrayBound = getArrayBounds(numbers);
 console.log(arrayBound);
