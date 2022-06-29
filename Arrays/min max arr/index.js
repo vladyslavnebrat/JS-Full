@@ -18,8 +18,11 @@ function checker(arr) {
   }
 
   const sum = min + max;
+  console.log(sum);
   if (sum > 1000) {
     return true;
   }
   return false;
 }
+
+console.log(checker([1, 2, 3, 5, 6, 7, 8, 98, 4444]));

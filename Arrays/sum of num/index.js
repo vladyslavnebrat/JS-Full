@@ -23,9 +23,10 @@ console.log(swap(numbers));
  */
 function swapManual(numbers) {
   const newArr = [...numbers];
-  return newArr.push(newArr.shift());
+  newArr.push(newArr.shift());
+  return newArr;
 }
 
 // examples
-swap([1, 10, 9, 11]); // ==> [10, 9, 11, 1]
-swapManual([1, 10, 9, 11]); // ==> [10, 9, 11, 1]
+console.log(swap([1, 10, 9, 11])); // ==> [10, 9, 11, 1]
+console.log(swapManual([1, 10, 9, 11])); // ==> [10, 9, 11, 1]

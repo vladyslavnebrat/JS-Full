@@ -28,3 +28,6 @@ function sortDesc(array) {
       }
   return arr;
 }
+
+console.log(sortAsc([1, 2, 3, 4, 5, 6]));
+console.log(sortDesc([1, 2, 3, 4, 5, 6]));

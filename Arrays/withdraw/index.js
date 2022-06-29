@@ -1,13 +1,18 @@
 function withdraw(clients, balances, client, amount) {
-  const indexOfPerson = clients.indexOf(client);
-  let balance = balances[indexOfPerson];
-  if (balance >= amount) {
-    balance -= amount;
-    return balance;
+  let index = 0;
+  for (let i = 0; i < clients.length; i += 1) {
+    if (clients[i] === client) {
+      index = i;
+      break;
+    }
   }
-  if (balance <= amount) {
-    balance -= amount;
-    return balance;
+
+  if (balances[index] >= amount) {
+    balances[index] -= amount;
+    return balances[index];
   }
+
   return -1;
 }
+
+console.log(withdraw(['Ann', 'Bob', 'User'], [1400, 87, 6], 'Ann', 50));

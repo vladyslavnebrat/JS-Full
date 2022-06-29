@@ -1,18 +1,18 @@
-/* eslint-disable no-restricted-syntax */
 /* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 
 /* Для решения этой задачи используй for..in цикл. В реальных проектах это плохая практика,
  * лучше использовать методы класса Object - keys(), values(), entries(). Но мы с ними пока не познакомитись.
  * Чтобы eslint не ругался на эту ошибку, для этой задачи он отключен аннотацией eslint-disable
  * */
 
-const obj = {
-  name: 'Tom',
-  age: 17,
+const concatProps = (obj) => {
+  const arr = [];
+  for (let key in obj) {
+    arr.push(obj[key]);
+  }
+  return arr;
 };
 
-function getKeys(obj) {
-  for (const key in obj) {
-    console.log(key);
-  }
-}
+// examples
+console.log(concatProps({ name: 'John Doe', age: 17, interest: 'football' })); // ==> ['John Doe', 17, 'football']
