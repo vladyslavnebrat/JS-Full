@@ -1,12 +1,9 @@
-const users = {
+const players = {
   Tom: 17,
   'John Doe': 19,
-  Bob: 18,
+  Bob: 100,
 };
 
-const getAdults = (usersObj) =>
-  Object.entries(usersObj)
-    .filter((user) => user[1] >= 18)
-    .map((user) => user[0]);
+const copyObj = (obj) => Object.assign({}, obj);
 
-console.log(getAdults(users));
+console.log(copyObj(players));

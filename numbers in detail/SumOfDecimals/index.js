@@ -1,6 +1,3 @@
-// Algo
-// // Sum
-// round to 2 decimals
 const getTotalPrice = (arr) => {
   const initialValue = 0;
   const sumWithInitial = arr.reduce(
