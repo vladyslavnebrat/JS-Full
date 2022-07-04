@@ -1,6 +1,6 @@
 /* eslint-disable default-case */
 
-export const calc = (expression) => {
+export default function calc(expression) {
   if (typeof expression !== 'string') {
     return null;
   }
@@ -25,3 +25,5 @@ export const calc = (expression) => {
 
   return `${expression} = ${result}`;
 };
+
+console.log(calc('1 + 2'));
