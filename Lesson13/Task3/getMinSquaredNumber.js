@@ -40,7 +40,7 @@ export const minSquaredNumber = (arr) => {
     return null;
   }
 
-  const SquaredArr = arr.map((element) => Math.min(element * element));
+  const SquaredArr = arr.map((element) => (element * element));
   return Math.min(...SquaredArr);
 };
 
