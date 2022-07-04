@@ -1,4 +1,4 @@
-import getAdults from './index';
+import { getAdults } from './index';
 
 it('Should get adults', () => {
   const result = getAdults({ 'John Doe': 19, Tom: 17, Bob: 18 });

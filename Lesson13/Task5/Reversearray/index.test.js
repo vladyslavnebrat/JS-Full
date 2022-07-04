@@ -1,4 +1,4 @@
-import reverseArray from './index';
+import { reverseArray } from './index';
 
 it('should reverse an array', () => {
   const newArr = reverseArray([1, 2, 3, 4]);

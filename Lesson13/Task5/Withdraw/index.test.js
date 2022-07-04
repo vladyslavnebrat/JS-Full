@@ -1,4 +1,4 @@
-import withdraw from './index';
+import { withdraw } from './index';
 
 it('Decrease an amount', () => {
   const [i] = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50);
