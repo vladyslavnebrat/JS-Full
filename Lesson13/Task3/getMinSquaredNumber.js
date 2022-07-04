@@ -35,13 +35,13 @@
 
 // console.log(minSquaredNumber([3, 5, 6, 7, 8]));
 
-export const minSquaredNumber = (arr) => {
+export default function minSquaredNumber(arr) {
   if (!Array.isArray(arr) || arr.length === 0) {
     return null;
   }
 
-  const SquaredArr = arr.map((element) => (element * element));
+  const SquaredArr = arr.map((element) => element * element);
   return Math.min(...SquaredArr);
-};
+}
 
 console.log(minSquaredNumber([3, 5, 6, 7, 8]));
