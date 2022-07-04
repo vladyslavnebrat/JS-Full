@@ -1,4 +1,4 @@
-import calc from './calculator';
+import { calc } from './calculator';
 
 it('should add a to b', () => {
   const result = calc('1 + 2');
